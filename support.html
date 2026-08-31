@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monetia — 支持与反馈</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<style>
+:root{--navy:#0B0F1E;--purple:#16142D;--gold:#D7AF3C;--gold-l:#F2CC59;--text:#F5F6FA;
+  --text2:rgba(255,255,255,.65);--text3:rgba(255,255,255,.37);--glass:rgba(255,255,255,.07);--stroke:rgba(255,255,255,.16)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans CJK SC",sans-serif;
+  background:linear-gradient(160deg,var(--navy),var(--purple),var(--navy));color:var(--text);line-height:1.8}
+.wrap{max-width:760px;margin:0 auto;padding:64px 24px}
+h1{font-size:34px;margin-bottom:8px}
+h1 em{font-style:normal;color:var(--gold-l)}
+p.sub{color:var(--text2);margin-bottom:40px}
+.card{background:var(--glass);border:1px solid var(--stroke);border-radius:18px;padding:24px;margin-bottom:18px}
+.card b{color:var(--gold-l)}
+a{color:var(--gold-l)}
+.faq h3{font-size:16px;margin:22px 0 6px;color:var(--gold-l)}
+.faq p{color:var(--text2);font-size:15px}
+code{background:rgba(0,0,0,.35);padding:2px 8px;border-radius:6px;font-size:13px}
+footer{color:var(--text3);text-align:center;padding:30px;font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1><em>Monetia</em> 支持</h1>
+  <p class="sub">常见问题与联系方式</p>
+
+  <div class="card"><b>🎙 语音记账没反应？</b><p style="color:var(--text2)">请到 系统设置 → Monetia，开启「麦克风」与「语音识别」权限。iOS 26 的首次授权弹窗请选择允许。</p></div>
+  <div class="card"><b>📷 识别收据失败？</b><p style="color:var(--text2)">请确保收据金额区域清晰、光线充足。识别失败时可直接手动输入，或在 AI 对话页粘贴邮件文本解析。</p></div>
+  <div class="card"><b>☁️ iCloud 同步没生效？</b><p style="color:var(--text2)">两台设备需登录同一 Apple ID 并开启 iCloud Drive。首次同步可能需要数分钟。</p></div>
+  <div class="card"><b>💱 汇率如何计算？</b><p style="color:var(--text2)">内置 26 种常用货币参考汇率（离线可用）。未收录币种按 1:1 记账，不影响原始金额。</p></div>
+  <div class="card"><b>🤖 支持哪些 AI？</b><p style="color:var(--text2)">默认内置 Firebase AI（Gemini）。设置中也可接入任何 OpenAI 兼容接口（DeepSeek、Groq、OpenRouter、Ollama 等）。</p></div>
+  <div class="card"><b>📤 数据如何导出？</b><p style="color:var(--text2)">设置 → 数据 → 导出 CSV，可用 Excel / Numbers 打开；也支持从 CSV 批量导入迁移。</p></div>
+
+  <div class="faq">
+    <h3>反馈与建议</h3>
+    <p>欢迎通过以下方式联系我们：</p>
+    <p>· 邮件：<a href="mailto:monetia@liop.dev">monetia@liop.dev</a></p>
+    <p>· GitHub Issues：<a href="https://github.com/ggcode-dev/moneta/issues">ggcode-dev/moneta</a></p>
+  </div>
+</div>
+<footer>© 2026 Monetia · <a href="index.html">返回首页</a> · <a href="privacy.html">隐私政策</a></footer>
+</body>
+</html>

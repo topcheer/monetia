@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monetia — 隐私政策</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<style>
+:root{--navy:#0B0F1E;--purple:#16142D;--gold-l:#F2CC59;--text:#F5F6FA;--text2:rgba(255,255,255,.65);--text3:rgba(255,255,255,.37)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans CJK SC",sans-serif;
+  background:linear-gradient(160deg,var(--navy),var(--purple),var(--navy));color:var(--text);line-height:1.9}
+.wrap{max-width:760px;margin:0 auto;padding:56px 24px 80px}
+h1{font-size:30px;margin-bottom:4px} h1 em{font-style:normal;color:var(--gold-l)}
+.date{color:var(--text3);font-size:13px;margin-bottom:36px}
+h2{font-size:19px;color:var(--gold-l);margin:32px 0 10px}
+p,li{color:var(--text2);font-size:15px} ul{padding-left:22px}
+b{color:var(--text)}
+footer{color:var(--text3);text-align:center;padding:26px;font-size:13px}
+a{color:var(--gold-l)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1><em>Monetia</em> 隐私政策</h1>
+<div class="date">Privacy Policy · 生效日期：2026 年 8 月 31 日</div>
+
+<h2>1. 总则</h2>
+<p>Monetia（"本应用"）由独立开发者（"我们"）开发。我们的核心原则是<b>本地优先（Local-first）</b>：你的账本数据默认存储在你的设备上，我们不运营任何后端服务器来存放你的账目。</p>
+
+<h2>2. 我们收集什么</h2>
+<ul>
+<li><b>账目数据（本地存储）</b>：交易金额、分类、备注、商户、收据图片，全部保存在设备本地数据库（SwiftData），并可在你开启后经你本人的 iCloud 私密同步到你的其它设备。这些数据不会发送给我们。</li>
+<li><b>AI 处理（按需、即用即传）</b>：仅当你使用语音记账、收据识别或 AI 对话时，相关文本/音频/图片才会发送至你所配置的 AI 服务商（默认 Firebase AI Logic / Google，或你自行填写的任意 OpenAI 兼容服务商）进行处理。我们不在这类请求中附加任何账号标识，也无法将内容关联到你本人。</li>
+<li><b>我们不收集</b>：无注册账号、无广告标识符（IDFA）、无第三方追踪 SDK、无行为分析。</li>
+</ul>
+
+<h2>3. 数据存储与安全</h2>
+<ul>
+<li>账本数据经 iOS 数据保护机制存储；iCloud 同步使用 Apple 端到端加密通道。</li>
+<li>收据图片仅存本地，可随时在编辑记录时删除。</li>
+</ul>
+
+<h2>4. 第三方服务</h2>
+<ul>
+<li><b>Firebase AI Logic / Google Gemini</b>：处理你主动发起的 AI 请求。受 <a href="https://policies.google.com/privacy" rel="noopener">Google 隐私政策</a>约束。</li>
+<li><b>自配 OpenAI 兼容服务商</b>（如 DeepSeek、OpenRouter、Ollama 等）：由你自行选择并配置，其数据处理遵循对应服务商政策。</li>
+<li><b>Apple iCloud</b>：仅在你开启同步时使用，数据在你本人的 iCloud 账户内。</li>
+</ul>
+
+<h2>5. 权限使用</h2>
+<ul>
+<li><b>麦克风 / 语音识别</b>：仅在你按下录音键时录制；本地转写优先，音频仅转写失败时按需发送 AI。</li>
+<li><b>相机 / 照片</b>：仅用于拍摄或选取收据图片。</li>
+<li><b>通知</b>：仅用于预算 80%/100% 提醒。</li>
+</ul>
+
+<h2>6. 你的权利</h2>
+<ul>
+<li><b>导出</b>：设置 → 数据 → 导出 CSV，随时带走全部数据。</li>
+<li><b>删除</b>：删除 App 即删除设备上的全部数据；卸载后我们不留存任何你的数据（因为我们从未收集）。</li>
+<li><b>AI 关闭</b>：不使用 AI 功能即不会有任何数据离开设备。</li>
+</ul>
+
+<h2>7. 儿童隐私</h2>
+<p>本应用不面向 13 岁以下儿童，也不 knowingly 收集儿童信息。</p>
+
+<h2>8. 政策变更</h2>
+<p>如有重大变更我们将通过应用内公告与本页面更新告知。</p>
+
+<h2>9. 联系我们</h2>
+<p>隐私相关问题：<a href="mailto:monetia@liop.dev">monetia@liop.dev</a></p>
+
+<p style="margin-top:40px;color:var(--text3);font-size:13px">This policy is also available upon request in English, Japanese, Korean, Spanish, German and Russian.</p>
+</div>
+<footer>© 2026 Monetia · <a href="index.html">返回首页</a> · <a href="support.html">支持</a></footer>
+</body>
+</html>
