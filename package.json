@@ -1,0 +1,8 @@
+{
+  "name": "monetia-site",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "npx -y serve -s site -l ${PORT:-8080}"
+  }
+}
